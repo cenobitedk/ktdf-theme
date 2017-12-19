@@ -1,0 +1,9 @@
+{
+  "name": "cenobitedk/ktdf-theme",
+  "description": "Theme for Killtown Death Fest",
+  "type": "wordpress-theme",
+  "version": "1.0.0",
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}
