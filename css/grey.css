@@ -1,0 +1,198 @@
+/* color */
+
+a {
+	color: #3D595F;
+}
+a:visited {
+	color: #4e5b5e;
+}
+a:hover {
+	color: #4c6f76;
+}
+.nav li:hover a,
+.nav li.sfhover a,
+.nav li.current-menu-item a,
+.nav li.current_page_item a,
+.nav li:hover li:hover a,
+.nav li.sfhover li.sfhover a,
+.nav li:hover li:hover li:hover a,
+.nav li.sfhover li.sfhover li.sfhover a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited,
+.post-meta a,
+.post-meta a:visited,
+.post-info a,
+.post-info a:visited,
+#comments cite,
+#comments cite a,
+#comments .reply,
+#comments .reply a,
+#comments input[type=submit],
+#searchform input[type=submit],
+.post-meta,
+a.more-link {
+	color: #3d595f !important;
+}
+
+
+/* border */
+
+#searchform input[type=text],
+#comments img,
+#comments input,
+#comments textarea,
+.mc_input,
+#searchform input[type=submit],
+.post-meta,
+blockquote {
+	border: 1px solid #3d5a5f;
+}
+
+.wp-caption img,
+#comments li .comment-body {
+	border-top:1px solid #3D595F;
+}
+
+#header {
+	border-bottom: 4px solid #3f5d63;
+}
+a.more-link,
+.wp-caption p,
+#comments li .comment-body {
+	border-bottom:1px solid #3D595F;
+}
+
+.wp-caption p,
+.wp-caption img,
+#comments li li .comment-body {
+	border-left:1px solid #3D595F;
+}
+
+.wp-caption img,
+.wp-caption p,
+#comments li .comment-body {
+	border-right:1px solid #3D595F;
+}
+
+/* background */
+
+#comments input[type=submit]:hover,
+.mc_signup_submit input[type=submit]:hover {
+	background: #3d595f;
+}
+
+body {
+	background: #000 url(../images/background.jpg) center top no-repeat;
+		 background-size: auto auto;
+		 -webkit-background-size: 2000px 1175px;
+}
+#wrapper {
+
+	
+	
+	background: #131313, #121212;
+	background-image: url(../images/background.jpg),url(../images/bg-2.gif);
+	background-position: center top, center top;
+	background-repeat: no-repeat, repeat-y;
+	 background-size: auto auto;
+	 -webkit-background-size: 2000px 1175px;
+}
+
+.nav li:hover,
+.nav li.sfhover,
+.nav li.current-menu-item,
+.nav li.current_page_item {
+	background: url(../images/menu.png) 50% 29px no-repeat;
+}
+.nav li.has-children a {
+	background: url(../images/arrows.png) 100% -89px no-repeat;
+}
+.nav li li.has-children a {
+	background: url(../images/arrows.png) 100% 6px no-repeat;
+}
+
+blockquote {
+	background: rgba(61,90,95,0.15);
+}
+
+#comments li .comment-body .comment-arrow {
+	background: url(../images/comment-arrow.png) no-repeat;
+}
+
+#comments li li .comment-body .comment-arrow {
+	background: url(../images/comment-arrow.png) -8px 0 no-repeat;
+}
+
+#comments li li li .comment-body .comment-arrow {
+	background: url(../images/comment-arrow.png) -8px 0 no-repeat;
+}
+
+#footer {
+	background: url(../images/footer.jpg) 50% 0;
+}
+
+.gigpress-table {
+	color: #3F5D62 !important;}
+    
+a.gigpress-tickets-link {
+    background: none repeat scroll 0 0 #3E5C61;
+    border: 1px solid #3E585D;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+    color: #CECECE!important;
+    display: block;
+    font-weight: bold;
+    left: 79%;
+    padding: 2px 0 2px 2px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 45px;
+    width: 100px;}
+    
+a:hover.gigpress-tickets-link {
+    background: none repeat scroll 0 0 #4b6e74;
+	text-decoration: none;}
+
+a:active.gigpress-tickets-link {
+	background-color: #384f54;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4) inset;}
+
+span.gigpress-info-item {
+    color: #3F5D62 !important;}
+    
+/* GigPress Colors */
+
+#wrapper #content .gigpress-table,
+#wrapper #content .gigpress-info-item {
+	color: #3E5C61 !important;
+}
+#wrapper #content a.gigpress-tickets-link,
+#wrapper #sidebar a.gigpress-tickets-link{
+	background-color: #3E5C61;
+	border-color: #3E585D;
+}
+
+#wrapper #content a.gigpress-tickets-link:hover ,
+#wrapper #sidebar a.gigpress-tickets-link:hover {
+	background-color: #4b6e74;
+}
+#wrapper #content a.gigpress-tickets-link:active ,
+#wrapper #sidebar a.gigpress-tickets-link:active {
+	background-color: #384f54;
+}

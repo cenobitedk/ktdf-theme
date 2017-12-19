@@ -1,0 +1,174 @@
+#header .icons li {
+	background: url(../images/icons-header.png) 0px 0px no-repeat;
+}
+#header .icons li,
+#header .icons li a {
+	width: 100px;
+	height: 35px;
+}
+
+/* Icon Images */
+#header .icons li.itunes a,
+#header .icons li.itunes {
+   background-position: 0px 0px;
+   width: 70px;
+}
+#header .icons li.facebook a,
+#header .icons li.facebook {
+	background-position: 0px -35px;
+	width: 80px;
+}
+#header .icons li.myspace a,
+#header .icons li.myspace {
+	background-position: 0px -70px;
+	width: 78px;
+}
+#header .icons li.purevolume a,
+#header .icons li.purevolume {
+	background-position: 0px -105px;
+	width: 101px;
+}
+#header .icons li.youtube a,
+#header .icons li.youtube {
+	background-position: 0px -140px;
+	width: 62px;
+}
+#header .icons li.twitter a,
+#header .icons li.twitter {
+	background-position: 0px -175px;
+	width: 98px;
+}
+#header .icons li.soundcloud a,
+#header .icons li.soundcloud {
+	background-position: 0px -210px;
+	width: 72px;
+}
+#header .icons li.lastfm a,
+#header .icons li.lastfm {
+	background-position: 0px -245px;
+	width: 57px;
+}
+#header .icons li.bandsintown a,
+#header .icons li.bandsintown {
+	background-position: 0px -280px;
+	width: 68px;
+}
+#header .icons li.tumblr a,
+#header .icons li.tumblr {
+	background-position: 0px -315px;
+	width: 73px;
+}
+#header .icons li.ilike a,
+#header .icons li.ilike {
+	background-position: 0px -350px;
+	width: 43px;
+}
+#header .icons li.reverbnation a,
+#header .icons li.reverbnation {
+	background-position: 0px -385px;
+	width: 110px;
+}
+#header .icons li.bandcamp a,
+#header .icons li.bandcamp {
+	background-position: 0px -420px;
+	width: 54px;
+}
+#header .icons li.amazon a,
+#header .icons li.amazon {
+	background-position: 0px -455px;
+	width: 65px;
+}
+#header .icons li.foxhound a,
+#header .icons li.foxhound {
+	background-position: 0px -490px;
+	width: 0;
+	height: 0;
+	display:none !important;
+}
+
+/** Footer social icons **/
+
+#footer .icons li {
+	background: url(../images/icons-header.png) 0px 0px;
+}
+#footer .icons li,
+#footer .icons li a {
+	width: 100px;
+	height: 35px;
+}
+
+/* Icon Images */
+#footer .icons li.itunes a,
+#footer .icons li.itunes {
+   background-position: 0px 0px;
+   width: 70px;
+}
+#footer .icons li.facebook a,
+#footer .icons li.facebook {
+	background-position: 0px -35px;
+	width: 80px;
+}
+#footer .icons li.myspace a,
+#footer .icons li.myspace {
+	background-position: 0px -70px;
+	width: 78px;
+}
+#footer .icons li.purevolume a,
+#footer .icons li.purevolume {
+	background-position: 0px -105px;
+	width: 101px;
+}
+#footer .icons li.youtube a,
+#footer .icons li.youtube {
+	background-position: 0px -140px;
+	width: 62px;
+}
+#footer .icons li.twitter a,
+#footer .icons li.twitter {
+	background-position: 0px -175px;
+	width: 98px;
+}
+#footer .icons li.soundcloud a,
+#footer .icons li.soundcloud {
+	background-position: 0px -210px;
+	width: 72px;
+}
+#footer .icons li.lastfm a,
+#footer .icons li.lastfm {
+	background-position: 0px -245px;
+	width: 57px;
+}
+#footer .icons li.bandsintown a,
+#footer .icons li.bandsintown {
+	background-position: 0px -280px;
+	width: 68px;
+}
+#footer .icons li.tumblr a,
+#footer .icons li.tumblr {
+	background-position: 0px -315px;
+	width: 73px;
+}
+#footer .icons li.ilike a,
+#footer .icons li.ilike {
+	background-position: 0px -350px;
+	width: 43px;
+}
+#footer .icons li.reverbnation a,
+#footer .icons li.reverbnation {
+	background-position: 0px -385px;
+	width: 110px;
+}
+#footer .icons li.bandcamp a,
+#footer .icons li.bandcamp {
+	background-position: 0px -420px;
+	width: 54px;
+}
+#footer .icons li.amazon a,
+#footer .icons li.amazon {
+	background-position: 0px -455px;
+	width: 65px;
+}
+#footer .icons li.foxhound a,
+#footer .icons li.foxhound {
+	background-position: 0px -490px;
+}
