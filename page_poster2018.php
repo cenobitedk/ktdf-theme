@@ -43,7 +43,7 @@
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.6.0/lazyload.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="/teaser/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
