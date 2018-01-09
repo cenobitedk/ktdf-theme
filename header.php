@@ -5,14 +5,14 @@
 
 /**
  * Globalize $foxhound_options
- * 
+ *
  * @global	array	$foxhound_options	Theme options array
  */
 global $foxhound_options;
 $foxhound_options = foxhound_get_options();
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<!doctype html>
+<html <?php language_attributes(); ?>>
 <head profile="http://gmpg.org/xfn/1">
 	<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
 	<title><?php bloginfo( 'name' ); ?> <?php wp_title(); ?></title>
@@ -62,9 +62,9 @@ $foxhound_options = foxhound_get_options();
 							$image_atts = array(
 								'alt'	=> '',
 								'title'	=> '',
-							);							
-							$img = get_the_post_thumbnail( $image->ID, 'header-slider-image', $image_atts );							
-							$sliderimage_link = get_post_meta( $image->ID, 'sliderimage_link', true );							
+							);
+							$img = get_the_post_thumbnail( $image->ID, 'header-slider-image', $image_atts );
+							$sliderimage_link = get_post_meta( $image->ID, 'sliderimage_link', true );
 							$sliderimage_linktarget = get_post_meta( $image->ID, 'sliderimage_linktarget', true );
 							if ( '' != $sliderimage_link ) {
 								$target = ( $sliderimage_linktarget ? ' target="_blank"' : '' );
@@ -131,16 +131,16 @@ $foxhound_options = foxhound_get_options();
 					$darkgritty_header_image_url = $darkgritty_header_image['url'];
 					echo '<img src="' . esc_attr( $darkgritty_header_image_url ) . '" width="' . $darkgritty_header_image_width . '" alt="" />';
 				}
-			} else {			
+			} else {
 				$small_band_photo = $foxhound_options['small_band_photo'];
 				$small_band_photo_url = $small_band_photo['url'];
 				echo '<img src="' . esc_attr( $small_band_photo_url ) . '" width="975" alt="" />';
 			}
 		?>
 		</div>
-		
+
 		<?php get_template_part( 'social-network-links' ); ?>
-		
+
 		*/ ?>
 
 	</div>
