@@ -15,7 +15,7 @@ License URI:	http://foxhoundbandthemes.com/terms-licencing/
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -386,6 +386,7 @@ background-position: -514px -7px;
 }
 #sidebar .widget {
 	float: left;
+  clear: both;
 	margin: 20px 0 0 0;
 }
 #sidebar a {
@@ -419,11 +420,25 @@ width:220px;
 	border-radius: 4px;
 }
 /* Sidebar lists */
+.widget ul {
+  padding-left: 7px;
+}
 .widget li {
 	float: left;
-	width: 150px;
+  clear: both;
 	font-size: 11px;
 	color: #737373;
+  position: relative;
+  margin-bottom: 2px;
+}
+.widget li:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  border-left: 2px solid #666;
+  height: calc(100% - 8px);
+  top: 4px;
+  left: -7px;
 }
 
 /* Text */
@@ -895,14 +910,14 @@ margin-top: 12px;
 .mc_signup_submit input[type=submit]:hover {
 		color: #fff;
 }
-	
+
 .a2a_dd img {
 border: 0!important;
 padding: 0!important;
 }
 
-    
-/* iPhone [portrait + landscape] 
+
+/* iPhone [portrait + landscape]
 @media only screen and (max-device-width: 480px) {
 body {background: #000 url(images/background-iphone.jpg) center top no-repeat!important;}
 #wrapper{background: #131313 url(images/background-iphone.jpg) center top no-repeat!important;}
