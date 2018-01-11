@@ -75,6 +75,13 @@ h1#title {
 	text-indent: -999em;
 	margin: 0;
 	padding: 0;
+  position: relative;
+}
+h1#title img {
+  display: block;
+  position: absolute;
+  width: inherit;
+  height: inherit;
 }
 h1#title a {
 	display: block;

@@ -24,7 +24,10 @@ $foxhound_options = foxhound_get_options();
 
 <div id="wrapper">
 	<?php /* Logo */ ?>
-	<h1 id="title"><a href="<?php echo esc_url(home_url('/')); ?>" title="Home"><?php bloginfo( 'name' ); ?></a></h1>
+	<h1 id="title">
+    <img src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>">
+    <a href="<?php echo esc_url(home_url('/')); ?>" title="Home"><?php bloginfo( 'name' ); ?></a>
+  </h1>
 
 	<?php /* Main menu */
 	wp_nav_menu(
