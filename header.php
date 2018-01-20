@@ -25,8 +25,16 @@ $foxhound_options = foxhound_get_options();
 <div id="wrapper">
 	<?php /* Logo */ ?>
 	<h1 id="title">
-    <img src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>">
-    <a href="<?php echo esc_url(home_url('/')); ?>" title="Home"><?php bloginfo( 'name' ); ?></a>
+    <a href="<?php echo esc_url(home_url('/')); ?>" title="Home">
+      <img srcset="<?php echo get_template_directory_uri() . '/images/logo.png'; ?> 975w,
+                   <?php echo get_template_directory_uri() . '/images/logo.1.5x.png'; ?> 1463w,
+                   <?php echo get_template_directory_uri() . '/images/logo.2x.png'; ?> 1950w"
+           sizes="(max-width: 750px) 100vw,
+                  (min-width: 1100px) 2000px,
+                  750px"
+           src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>">
+      <?php bloginfo( 'name' ); ?>
+    </a>
   </h1>
 
 	<?php /* Main menu */

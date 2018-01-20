@@ -71,7 +71,7 @@ a:hover {
 h1#title {
 	width: 975px;
 	height: 378px;
-	background: url(images/logo.png);
+	/* background: url(images/logo.png); */
 	text-indent: -999em;
 	margin: 0;
 	padding: 0;
