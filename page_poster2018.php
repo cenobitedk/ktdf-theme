@@ -43,16 +43,16 @@
         <![endif]-->
 
         <div class="poster">
-          <a href="<?php if(get_option('show_on_front') == 'page') {
-            echo get_permalink(get_option('page_for_posts'));
-          } else {
-            echo esc_url(home_url('/'));
-          }?>" title="Kill-Town Death Fest 2018">
-            <img src="/teaser/img/KTDF-2018-poster-w240.jpg"
-              data-src="/teaser/img/KTDF-2018-poster-w1200.jpg"
-              data-srcset="/teaser/img/KTDF-2018-poster-w600.jpg 600w, /teaser/img/KTDF-2018-poster-w900.jpg 900w, /teaser/img/KTDF-2018-poster-w1200.jpg 1200w"
-              sizes="(min-width: 770px) 90vh, 100vw">
-          </a>
+            <a href="<?php if(get_option('show_on_front') == 'page') {
+                echo get_permalink(get_option('page_for_posts'));
+            } else {
+                echo esc_url(home_url('/'));
+            }?>" title="Kill-Town Death Fest 2018">
+                <img src="/teaser/img/KTDF-2018-poster-w240.jpg"
+                  data-src="/teaser/img/KTDF-2018-poster-w1200.jpg"
+                  data-srcset="/teaser/img/KTDF-2018-poster-w600.jpg 600w, /teaser/img/KTDF-2018-poster-w900.jpg 900w, /teaser/img/KTDF-2018-poster-w1200.jpg 1200w"
+                  sizes="(min-width: 770px) 90vh, 100vw">
+            </a>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.6.0/lazyload.min.js"></script>
