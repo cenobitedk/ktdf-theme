@@ -80,7 +80,7 @@ function darkgritty_valid_color_schemes() {
 			'name' =>	'green',
 			'title' => __( 'Green', 'dark-gritty' )
 		),
-		'green' => array(
+		'gold' => array(
 			'name' =>	'gold',
 			'title' => __( 'Gold', 'dark-gritty' )
 		),
