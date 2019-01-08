@@ -1,4 +1,4 @@
-<?php /* Template name: Poster 2018 */ ?>
+<?php /* Template name: Poster 2019 */ ?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
