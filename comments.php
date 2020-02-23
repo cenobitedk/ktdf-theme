@@ -14,10 +14,10 @@
 	if ( get_comment_pages_count() > 1 ) : // are there comments to navigate through ?>
 	<div class="navigation">
 		<div class="nav-previous">
-			<?php previous_comments_link( __( '&larr; Older Comments', 'darkgritty' ) ); ?>
+			<?php previous_comments_link( __( '&larr; Older Comments', 'ktdf-theme' ) ); ?>
 		</div>
 		<div class="nav-next">
-			<?php next_comments_link( __( 'Newer Comments &rarr;', 'darkgritty' ) ); ?>
+			<?php next_comments_link( __( 'Newer Comments &rarr;', 'ktdf-theme' ) ); ?>
 		</div>
 	</div>
 <?php endif; // check for comment navigation ?>
@@ -37,10 +37,10 @@
 	<?php if ( get_comment_pages_count() > 1 ) : // are there comments to navigate through ?>
 	<div class="navigation">
 		<div class="nav-previous">
-			<?php previous_comments_link( __( '&larr; Older Comments', 'darkgritty' ) ); ?>
+			<?php previous_comments_link( __( '&larr; Older Comments', 'ktdf-theme' ) ); ?>
 		</div>
 		<div class="nav-next">
-			<?php next_comments_link( __( 'Newer Comments &rarr;', 'darkgritty' ) ); ?>
+			<?php next_comments_link( __( 'Newer Comments &rarr;', 'ktdf-theme' ) ); ?>
 		</div>
 	</div>
 <?php endif; // check for comment navigation ?>

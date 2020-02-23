@@ -27,8 +27,8 @@ endwhile;
 /* If no posts, then serve error message */
 else : ?>
 <div class="post">
-	<h2><?php _e( 'Not Found', 'darkgritty' ); ?></h2>
-	<p><?php _e( 'Sorry, but you are looking for something that isn\'t here.', 'darkgritty' ); ?></p>
+	<h2><?php _e( 'Not Found', 'ktdf-theme' ); ?></h2>
+	<p><?php _e( 'Sorry, but you are looking for something that isn\'t here.', 'ktdf-theme' ); ?></p>
 </div>
 <?php endif; ?>
 

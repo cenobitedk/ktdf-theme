@@ -1,13 +1,13 @@
 /*
-Theme Name:		Dark N Gritty - KTDF
-Theme URI:		http://foxhoundbandthemes.com/themes/dark-gritty-theme/
+Theme Name:		KTDF theme
+Theme URI:		https://github.com/cenobitedk/ktdf-theme
 Description:	The Dark N Gritty supports custom menus, logos, header image, and background. A widgetized sidebar makes adding new functionality to your website very easy. We encourage creativity, this theme can be used as is or altered and distressed to new measures.
 Author:			Foxhound Band Themes
 Author URI:		http://foxhoundbandthemes.com
-Version:		1.5.0
-Tags:			gray, red, blue, green
+Version:		2.0.0
 License:		GPL
 License URI:	http://foxhoundbandthemes.com/terms-licencing/
+Text Domain:  ktdf-theme
  *
  * Dark N Gritty WordPress Theme, Copyright (C) 2012 Foxhound Band Themes
  *
@@ -976,3 +976,35 @@ body {background: #000 url(images/background-iphone.jpg) center top no-repeat!im
 #wrapper{background: #131313 url(images/background-iphone.jpg) center top no-repeat!important;}
 
 */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}

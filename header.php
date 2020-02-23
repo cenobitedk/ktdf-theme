@@ -13,15 +13,16 @@ $foxhound_options = foxhound_get_options();
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
-<head profile="http://gmpg.org/xfn/1">
-	<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
-	<title><?php bloginfo( 'name' ); ?> <?php wp_title(); ?></title>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all" />
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
 
+	<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
 <div id="wrapper">
 	<?php /* Logo */ ?>
 	<h1 id="title">

@@ -19,7 +19,7 @@ if ( is_page_template( 'full-width.php' ) )
 	<?php /* Start Primary Widget Area */
 	if ( !dynamic_sidebar( 'sidebar' ) ) : ?>
 	<div class="widget">
-		<h3><?php _e( 'Archives', 'dark-gritty' ); ?></h3>
+		<h3><?php _e( 'Archives', 'ktdf-theme' ); ?></h3>
 		<ul>
 			<?php wp_get_archives( 'type=monthly' ); ?>
 		</ul>

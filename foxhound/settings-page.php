@@ -17,15 +17,13 @@
 function foxhound_add_settings_page() {
 
 	// Add admin page
-	add_menu_page(
-		__( 'Settings', 'foxhound' ),
+	add_theme_page(
+		__( 'Settings', 'ktdf-theme' ),
 		FOXHOUND_THEMENAME,
 		'edit_theme_options',
 		'theme_options',
 		// Callback function to output settings page
-		'foxhound_settings_page',
-		// Settings page admin menu icon
-		get_template_directory_uri() . '/images/menu_icon.gif'
+		'foxhound_settings_page'
 	);
 
 }
@@ -49,7 +47,7 @@ function foxhound_settings_page() {
 		<?php foxhound_get_page_tab_markup(); ?>
 		<?php if ( isset( $_GET['settings-updated'] ) ) {
     			echo '<div class="updated"><p>';
-				echo __( 'Theme settings updated successfully.', 'foxhound' );
+				echo __( 'Theme settings updated successfully.', 'ktdf-theme' );
 				echo '</p></div>';
 		} ?>
 		<form action="options.php" method="post" enctype="multipart/form-data">
@@ -60,8 +58,8 @@ function foxhound_settings_page() {
 			// Settings field in each section
 			do_settings_sections( $settings_section );
 		?>
-			<?php submit_button( __( 'Save Settings', 'foxhound' ), 'primary', FOXHOUND_THEMESLUG . '_theme_options[submit-' . $currenttab . ']', false ); ?>
-			<?php submit_button( __( 'Reset Defaults', 'foxhound' ), 'secondary', FOXHOUND_THEMESLUG . '_theme_options[reset-' . $currenttab . ']', false ); ?>
+			<?php submit_button( __( 'Save Settings', 'ktdf-theme' ), 'primary', FOXHOUND_THEMESLUG . '_theme_options[submit-' . $currenttab . ']', false ); ?>
+			<?php submit_button( __( 'Reset Defaults', 'ktdf-theme' ), 'secondary', FOXHOUND_THEMESLUG . '_theme_options[reset-' . $currenttab . ']', false ); ?>
 		</form>
 	</div>
 <?php 

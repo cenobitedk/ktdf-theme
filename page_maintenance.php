@@ -8,7 +8,7 @@
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE" />
 <META NAME="GOOGLEBOT" CONTENT="NOARCHIVE" />
 
-<title>Kill-Town Death Fest 2013</title>
+<title>Kill-Town Death Fest</title>
 <meta name="keywords" content="killtown, kill, town, kill-town, death, fest, deathfest, underground, undergrund, ungdomshuset, dortheavej, metal, deathmetal, københavn, copenhagen, kopenhagen, diy, d.i.y., festival, music, beer, party, extreme, xtreem music, me saco un ojo, soulseller, serpent pulse, zero tolerance, extremely rotten, nuclear winter, blood harvest, doomentia, no posers please, ibex moon, posh isolation, terrorizer, magazine, undergrundsmusikkens fremme, vegan, veganer, vegetar" />
 <meta name="description" content="Danish D.I.Y. underground Death Metal festival. The 2013 edition will be held 29th August - 1st September in Ungdomshuset, Copenhagen, Denmark.
 The festival is a 4-day event, with a warm up show at Loppen in Copenhagens freetown Christiania. The festival will present more than 20 international acts, metal DJs, good cheap quality beer, vegan food stalls, horror movie screenings, distro-area and outdoor hang-out space." />

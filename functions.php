@@ -51,11 +51,11 @@ function darkgritty_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'primary-menu' => __( 'Primary Menu' ),
+			'primary-menu' => __( 'Primary Menu', 'ktdf-theme' ),
 		)
 	);
 
-	add_custom_image_header( 'darkgritty_header_style', 'darkgritty_admin_header_style', 'darkgritty_admin_header_image' ); // Custom header
+	// DEPRECATED: add_custom_image_header( 'darkgritty_header_style', 'darkgritty_admin_header_style', 'darkgritty_admin_header_image' ); // Custom header
 	add_theme_support( 'automatic-feed-links' ); // Add default posts and comments RSS feed links to head
 
 	// Your changeable header business starts here
@@ -157,9 +157,9 @@ function darkgritty_widgets_init() {
 	// Registers Primary Widget Area
 	register_sidebar(
 		array (
-			'name' => __( 'Sidebar', 'darkgritty' ),
+			'name' => __( 'Sidebar', 'ktdf-theme' ),
 			'id' => 'sidebar',
-			'description' => __( 'The sidebar widget area', 'darkgritty' ),
+			'description' => __( 'The sidebar widget area', 'ktdf-theme' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<h3 class="title widgettitle">',
@@ -340,18 +340,18 @@ function darkgritty_comment( $comment, $args, $depth ) {
 		echo '<div class="comment-arrow"></div>';
 
 		/* Display authors name */
-		printf( __( '<cite>%s</cite> ', 'darkgritty' ), get_comment_author_link() );
+		printf( __( '<cite>%s</cite> ', 'ktdf-theme' ), get_comment_author_link() );
 
 		/* Display comment link, date and time */ ?>
-		<a class="time" href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><?php printf( __( '%1$s at %2$s', 'darkgritty' ), get_comment_date(),  get_comment_time() ); ?></a>
+		<a class="time" href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><?php printf( __( '%1$s at %2$s', 'ktdf-theme' ), get_comment_date(),  get_comment_time() ); ?></a>
 		<?php 
 
 		/* Edit comment link */
-		edit_comment_link( __( 'Edit', 'darkgritty' ), '. <span class="edit">', '</span>' );
+		edit_comment_link( __( 'Edit', 'ktdf-theme' ), '. <span class="edit">', '</span>' );
 
 		/* Message for when comment not approved yet */
 		if ( $comment->comment_approved == '0' )
-			echo '<em>' . __( 'Your comment is awaiting moderation.', 'darkgritty' ) . '</em><br />';
+			echo '<em>' . __( 'Your comment is awaiting moderation.', 'ktdf-theme' ) . '</em><br />';
 
 		/* Display the comment itself */
 		comment_text();
@@ -374,7 +374,7 @@ function darkgritty_comment( $comment, $args, $depth ) {
 	/* Display pingbacks */
 	else : ?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback: ', 'darkgritty' ); ?><?php comment_author_link(); ?><?php edit_comment_link ( __( 'edit', 'darkgritty' ), '&nbsp;&nbsp;', '' ); ?></p>
+		<p><?php _e( 'Pingback: ', 'ktdf-theme' ); ?><?php comment_author_link(); ?><?php edit_comment_link ( __( 'edit', 'ktdf-theme' ), '&nbsp;&nbsp;', '' ); ?></p>
 	<?php endif;
 }
 
@@ -393,16 +393,6 @@ function darkgritty_comment_form_fields( $fields ) {
 	return $darkgritty_fields;
 }
 add_filter( 'comment_form_default_fields', 'darkgritty_comment_form_fields' );
-
-/**
- * Add GigPress custom stylesheet
- */
-function darkgritty_gigpress() {
-	echo '<link type="text/css" rel="stylesheet" href="' . get_template_directory_uri() . '/css/gigpress.css" />';
-}
-// Hook into wp_head, so we can override default styles from Plugin
-add_action( 'wp_head', 'darkgritty_gigpress', 11 );
-
 
 /**
  * Enqueue comment-reply script
@@ -428,8 +418,8 @@ function darkgritty_add_header_image_meta_box( $post ) {
 	$context = 'side'; // 'normal', 'side', 'advanced'
 	$priority = 'default'; // 'high', 'core', 'low', 'default'
 
-    add_meta_box( 'darkgritty_header_image', __( 'Post Header Image Size', 'darkgritty' ), 'darkgritty_header_image_meta_box', 'post', $context, $priority );
-    add_meta_box( 'darkgritty_header_image', __( 'Page Header Image Size', 'darkgritty' ), 'darkgritty_header_image_meta_box', 'page', $context, $priority );
+    add_meta_box( 'darkgritty_header_image', __( 'Post Header Image Size', 'ktdf-theme' ), 'darkgritty_header_image_meta_box', 'post', $context, $priority );
+    add_meta_box( 'darkgritty_header_image', __( 'Page Header Image Size', 'ktdf-theme' ), 'darkgritty_header_image_meta_box', 'page', $context, $priority );
 	
 }
 // Hook meta boxes into 'add_meta_boxes'

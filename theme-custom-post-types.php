@@ -13,16 +13,16 @@
 function darkgritty_register_slider_post_type() {
  
 	$labels = array(
-		'name' => __( 'Slider Images' ),
-		'singular_name' => __( 'Slider Image' ),
-		'add_new' => _x( 'Add New', 'slider image' ),
-		'add_new_item' => __( 'Add New Slider Image' ),
-		'edit_item' => __( 'Edit Slider Image' ),
-		'new_item' => __( 'New Slider Image' ),
-		'view_item' => __( 'View Slider Image' ),
-		'search_items' => __( 'Search Slider Images' ),
-		'not_found' =>  __( 'Nothing found' ),
-		'not_found_in_trash' => __( 'Nothing found in Trash' ),
+		'name' => __( 'Slider Images', 'ktdf-theme' ),
+		'singular_name' => __( 'Slider Image', 'ktdf-theme' ),
+		'add_new' => _x( 'Add New', 'slider image', 'ktdf-theme' ),
+		'add_new_item' => __( 'Add New Slider Image', 'ktdf-theme' ),
+		'edit_item' => __( 'Edit Slider Image', 'ktdf-theme' ),
+		'new_item' => __( 'New Slider Image', 'ktdf-theme' ),
+		'view_item' => __( 'View Slider Image', 'ktdf-theme' ),
+		'search_items' => __( 'Search Slider Images', 'ktdf-theme' ),
+		'not_found' =>  __( 'Nothing found', 'ktdf-theme' ),
+		'not_found_in_trash' => __( 'Nothing found in Trash', 'ktdf-theme' ),
 		'parent_item_colon' => 'Parent Slider Image'
 	);
  
@@ -56,8 +56,8 @@ function darkgritty_sliderimage_post_metaboxes( $post ) {
     global $wp_meta_boxes;
 
     remove_meta_box('postimagediv', 'slider-image', 'side');
-    add_meta_box('postimagediv', __('Featured Image'), 'post_thumbnail_meta_box', 'slider-image', 'normal', 'high');
-	add_meta_box('sliderimagelink', __('Featured Image Link'), 'darkgritty_sliderimage_link_metabox', 'slider-image', 'normal', 'high');
+    add_meta_box('postimagediv', __('Featured Image', 'ktdf-theme'), 'post_thumbnail_meta_box', 'slider-image', 'normal', 'high');
+	add_meta_box('sliderimagelink', __('Featured Image Link', 'ktdf-theme'), 'darkgritty_sliderimage_link_metabox', 'slider-image', 'normal', 'high');
 }
 add_action( 'add_meta_boxes_slider-image', 'darkgritty_sliderimage_post_metaboxes' );
 
