@@ -457,10 +457,12 @@ body.paged #header {
   padding: 0 10px;
   flex: none;
   overflow: hidden;
+  margin-top: 4rem;
 }
 @media screen and (min-width: 720px) {
   #sidebar {
     width: 220px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 880px) {
