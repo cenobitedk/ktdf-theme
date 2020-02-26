@@ -10,6 +10,11 @@
 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+	
+	<div class="post-meta">
+		<?php the_time( get_option( 'date_format' ) ); ?>
+	</div>
+	
 	<?php if ( ! is_singular() && has_post_thumbnail() ) { ?>
 	<div class="img">
 		<?php the_post_thumbnail( 'post-featured-image' ); ?>
@@ -17,18 +22,10 @@ if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<?php } ?>
 	<?php the_content( 'Read More' ); ?>
 	<?php wp_link_pages( array( 'before' => '<strong>Pages:</strong> ', 'after' => '<br /><br />', 'next_or_number' => 'number' ) ); ?>
+
 	<div class="post-info">
-		<?php _e( 'Posted by ', 'ktdf-theme' ); ?>
-		<span class="author"><?php the_author_posts_link(); ?></span>
-		<?php _e( 'in', 'ktdf-theme' ); ?>
-		<span class="categories"><?php the_category( ', ' ); ?></span>
-		<?php the_tags( '<span class="tags">with the tags: ', ', ', '</span>' ); ?>
-		<?php edit_post_link( 'Edit', '. ', '' ); ?>
-	</div>
-	<div class="post-meta">
-		<span class="time"><?php the_time( get_option( 'date_format' ) ); ?></span>
-		<span class="comments-meta"><a href="<?php the_permalink(); ?>#respond"><?php comments_number(__( 'No Comments', 'ktdf-theme' ), __( '1 Comment', 'ktdf-theme' ), __( '% Comments', 'ktdf-theme' )); ?></a></span>
-		<span class="comment-question"><a href="<?php the_permalink(); ?>#respond"><?php _e( 'Leave a comment/question', 'ktdf-theme' ); ?></a></span>
+		<?php the_category( ', ' ); ?>
+		<?php edit_post_link( 'Edit', ' – [ ', ' ]' ); ?>
 	</div>
 </div>
 <?php endwhile;

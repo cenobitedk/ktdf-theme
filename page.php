@@ -10,17 +10,18 @@
 if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<h1><?php the_title(); ?></h1>
+	<div class="post-meta"></div>
 	<?php the_content(); ?>
 	<?php wp_link_pages( array( 'before' => '<div class="link-pages"><strong>Pages:</strong> ', 'after' => '</div>', 'next_or_number' => 'number' ) ); ?>
 	<div class="post-info">
-		<?php edit_post_link( 'Edit', '. ', '' ); ?>
+		<?php edit_post_link( 'Edit', '[ ', ' ]' ); ?>
 	</div>
 </div>
 <?php 
 
-if ( ! post_password_required() && comments_open() ) {
-	comments_template(); // Load comments
-}
+// if ( ! post_password_required() && comments_open() ) {
+// 	comments_template(); // Load comments
+// }
 
 endwhile;
 
