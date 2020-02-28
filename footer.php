@@ -26,6 +26,7 @@ global $foxhound_options;
 	}
 	?>
 </div>
+</div>
 
 <?php /* Footer */ ?>
 <div id="footer">

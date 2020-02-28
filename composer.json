@@ -2,9 +2,14 @@
   "name": "cenobitedk/ktdf-theme",
   "description": "Theme for Killtown Deathfest",
   "type": "wordpress-theme",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "require": {
-    "composer/installers": "~1.0",
-    "wpackagist-plugin/gigpress": "^2.3.19"
+    "composer/installers": "~1.0"
+  },
+  "archive": {
+    "exclude": [
+      "*.tar",
+      "/images/source"
+    ]
   }
 }

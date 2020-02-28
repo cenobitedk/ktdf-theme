@@ -1,13 +1,13 @@
 /*
-Theme Name:		Dark N Gritty - KTDF
-Theme URI:		http://foxhoundbandthemes.com/themes/dark-gritty-theme/
-Description:	The Dark N Gritty supports custom menus, logos, header image, and background. A widgetized sidebar makes adding new functionality to your website very easy. We encourage creativity, this theme can be used as is or altered and distressed to new measures.
-Author:			Foxhound Band Themes
-Author URI:		http://foxhoundbandthemes.com
-Version:		1.5.0
-Tags:			gray, red, blue, green
-License:		GPL
-License URI:	http://foxhoundbandthemes.com/terms-licencing/
+Theme Name:   KTDF theme
+Theme URI:    https://github.com/cenobitedk/ktdf-theme
+Description:  The Dark N Gritty supports custom menus, logos, header image, and background. A widgetized sidebar makes adding new functionality to your website very easy. We encourage creativity, this theme can be used as is or altered and distressed to new measures.
+Author:       Foxhound Band Themes
+Author URI:   http://foxhoundbandthemes.com
+Version:      2.0.0
+License:      GPL
+License URI:  http://foxhoundbandthemes.com/terms-licencing/
+Text Domain:  ktdf-theme
  *
  * Dark N Gritty WordPress Theme, Copyright (C) 2012 Foxhound Band Themes
  *
@@ -98,7 +98,7 @@ td {
   outline: 0;
   list-style: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
 }
 a {
   text-decoration: none;
@@ -109,21 +109,22 @@ a:hover {
 
 /* Wrappers */
 #wrapper {
-  width: 975px;
+  max-width: 975px;
   margin: 0 auto;
-  padding: 0 0 30px 0;
+  padding-bottom: 5rem;
   overflow: auto;
 }
 
 /* Header */
 h1#title {
-  width: 975px;
-  height: 378px;
+  max-width: 975px;
+  height: 309px;
   /* background: url(images/logo.png); */
   text-indent: -999em;
   margin: 0;
   padding: 0;
   position: relative;
+  overflow-x: scroll;
 }
 h1#title img {
   display: block;
@@ -137,7 +138,7 @@ h1#title a {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: 50px;
-  line-height: 370px;
+  line-height: 309px;
   margin: 0;
   padding: 0;
 }
@@ -149,6 +150,7 @@ h1#title a:hover {
 .nav {
   font-stretch: condensed;
   font-stretch: narrower;
+  padding: 0 5px;
 }
 .nav li {
   color: #999999;
@@ -160,15 +162,15 @@ h1#title a:hover {
 }
 .nav li a {
   display: block;
-  padding: 2px 15px 0;
+  padding: 4px 15px 0;
   color: #999;
   height: 34px;
   line-height: 34px;
   font-family: "BebasRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   letter-spacing: 0.7px;
-  line-height: 34px;
+  box-sizing: border-box;
 }
 
 .nav li:hover a,
@@ -245,9 +247,9 @@ h1#title a:hover {
 #header {
   position: relative;
   float: left;
-  margin: 3px 0 0 0;
+  margin: 3px 0 0.5rem;
   padding: 0;
-  width: 975px;
+  max-width: 975px;
   height: auto;
   overflow: hidden;
 }
@@ -421,11 +423,27 @@ body.paged #header {
   width: 145px;
 }
 
+/* Main */
+#main {
+  clear: both;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 720px) {
+  #main {
+    flex-direction: row;
+  }
+}
+
 /* Content */
 #content {
-  float: left;
-  width: 560px;
-  padding: 0 32px 0 33px;
+  /* float: left;
+  width: 580px;
+  padding: 0 32px 0 33px; */
+  padding: 0 10px;
+  flex: auto;
   overflow: hidden;
 }
 .page-template-full-width-php #content {
@@ -434,10 +452,23 @@ body.paged #header {
 
 /* Siderbar */
 #sidebar {
-  float: left;
-  width: 300px;
-  padding: 0 25px;
+  /* float: left;
+  padding: 0 25px; */
+  padding: 0 10px;
+  flex: none;
   overflow: hidden;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 720px) {
+  #sidebar {
+    width: 220px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 880px) {
+  #sidebar {
+    width: 280px;
+  }
 }
 #sidebar .widget {
   float: left;
@@ -445,35 +476,43 @@ body.paged #header {
   margin: 20px 0 0 0;
 }
 #sidebar a {
-  color: #737373;
+  color: #999;
 }
 
 /* Search form */
 #searchform {
-  width: 300px;
+  width: 280px;
+  font-size: 0;
 }
 #searchform label {
   display: none;
 }
 
+#searchform input[type="text"],
+#searchform input[type="submit"] {
+  font-size: 12px;
+}
 #searchform input[type="text"] {
   background: none;
   color: #cbcbcb;
   padding: 3px 5px;
-  width: 220px;
+  width: 200px;
+}
+@media screen and (min-width: 720px) and (max-width: 879px) {
+  #searchform input[type="text"] {
+    width: 150px;
+  }
 }
 #searchform input[type="submit"] {
   width: 60px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 10px;
   background: none;
-  padding: 3px 4px;
-  -moz-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  padding: 3px;
+  margin-left: -1px;
+  cursor: pointer;
 }
+
 /* Sidebar lists */
 .widget ul {
   padding-left: 7px;
@@ -481,8 +520,8 @@ body.paged #header {
 .widget li {
   float: left;
   clear: both;
-  font-size: 11px;
-  color: #737373;
+  font-size: 13px;
+  color: #999;
   position: relative;
   margin-bottom: 2px;
 }
@@ -490,9 +529,9 @@ body.paged #header {
   content: " ";
   display: block;
   position: absolute;
-  border-left: 2px solid #666;
-  height: calc(100% - 8px);
-  top: 4px;
+  border-left: 2px solid #777;
+  height: calc(100% - 7px);
+  top: 3px;
   left: -7px;
 }
 
@@ -562,10 +601,18 @@ li,
 blockquote,
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   color: #cbcbcb;
   line-height: 22px;
 }
+.post {
+  padding-bottom: 2rem;
+  border-bottom: thin solid #333;
+}
+.post + .post {
+  margin-top: 3rem;
+}
+
 p {
   margin: 6px 0 14px 0;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
@@ -633,40 +680,61 @@ a.more-link:hover {
 /* Post info and meta */
 .post-info {
   clear: both;
-  margin: 0 0 10px 0;
+  margin-bottom: 1rem;
   color: #999;
-  font-size: 11px;
+  font-size: 13px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.page .post-info,
 .single .post-info {
-  margin: 80px 0 10px 0;
+  margin-top: 3rem;
 }
 
 .post-meta {
-  margin: 0 0 50px 0;
+  margin: 0.5rem 0;
   padding: 15px 20px;
-  font-size: 12px;
+  padding: 0;
+  font-size: 13px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: auto;
+  color: #999;
 }
 .single .post-meta {
-  margin: 0;
+  margin: 1rem 0;
 }
+
+.single p,
+body.page p {
+  font-size: 15px;
+}
+
+.single p a,
+.page p a {
+  font-size: inherit;
+}
+
 .post-meta .time,
 .post-meta .comments-meta,
 .post-meta .share-this,
-.post-meta .comment-question {
+.post-meta .comment-question,
+.post-meta .info,
+.post-meta .action {
   float: left;
   width: 33%;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
-.post-meta .comments-meta {
+.post-meta .comments-meta,
+.post-meta .action {
   text-align: right;
   float: right;
 }
 .post-meta .share-this,
 .post-meta .comment-question {
   text-align: right;
+}
+
+.post-meta .info {
+  text-align: center;
 }
 
 /* Comments */
@@ -976,3 +1044,35 @@ body {background: #000 url(images/background-iphone.jpg) center top no-repeat!im
 #wrapper{background: #131313 url(images/background-iphone.jpg) center top no-repeat!important;}
 
 */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}

@@ -25,60 +25,60 @@ function foxhound_get_settings_page_tabs() {
 	$tabs = array( 
         'images' => array(
 			'name' => 'images',
-			'title' => __( 'Band Logo and Images', 'foxhound' ),
+			'title' => __( 'Band Logo and Images', 'ktdf-theme' ),
 			'sections' => array(
 				'general' => array(
 					'name' => 'general',
-					'title' => __( 'Band Logo and Images', 'foxhound' ),
-					'description' => __( '', 'foxhound' )
+					'title' => __( 'Band Logo and Images', 'ktdf-theme' ),
+					'description' => __( '', 'ktdf-theme' )
 				),
 			)
 		),
         'headerfooter' => array(
 			'name' => 'headerfooter',
-			'title' => __( 'Header/Footer', 'foxhound' ),
+			'title' => __( 'Header/Footer', 'ktdf-theme' ),
 			'sections' => array(
 				'header' => array(
 					'name' => 'header',
-					'title' => __( 'Site Header', 'foxhound' ),
-					'description' => __( '', 'foxhound' )
+					'title' => __( 'Site Header', 'ktdf-theme' ),
+					'description' => __( '', 'ktdf-theme' )
 				),
 				'slider' => array(
 					'name' => 'slider',
-					'title' => __( 'Header Slider', 'foxhound' ),
-					'description' => __( '', 'foxhound' )
+					'title' => __( 'Header Slider', 'ktdf-theme' ),
+					'description' => __( '', 'ktdf-theme' )
 				),
 				'footer' => array(
 					'name' => 'footer',
-					'title' => __( 'Site Footer', 'foxhound' ),
-					'description' => __( '', 'foxhound' )
+					'title' => __( 'Site Footer', 'ktdf-theme' ),
+					'description' => __( '', 'ktdf-theme' )
 				),
 			)
 		),
         'colors' => array(
 			'name' => 'colors',
-			'title' => __( 'Colors and Background', 'foxhound' ),
+			'title' => __( 'Colors and Background', 'ktdf-theme' ),
 			'sections' => array(
 				'background' => array(
 					'name' => 'background',
-					'title' => __( 'Site Background', 'foxhound' ),
-					'description' => __( '', 'foxhound' )
+					'title' => __( 'Site Background', 'ktdf-theme' ),
+					'description' => __( '', 'ktdf-theme' )
 				),
 				'colorscheme' => array(
 					'name' => 'colorscheme',
-					'title' => __( 'Color Scheme', 'foxhound' ),
-					'description' => __( '', 'foxhound' )
+					'title' => __( 'Color Scheme', 'ktdf-theme' ),
+					'description' => __( '', 'ktdf-theme' )
 				),
 			)
 		),
         'social' => array(
 			'name' => 'social',
-			'title' => __( 'Social Network Profiles', 'foxhound' ),
+			'title' => __( 'Social Network Profiles', 'ktdf-theme' ),
 			'sections' => array(
 				'profiles' => array(
 					'name' => 'profiles',
-					'title' => __( 'Social Media Icons', 'foxhound' ),
-					'description' => __( '', 'foxhound' )
+					'title' => __( 'Social Media Icons', 'ktdf-theme' ),
+					'description' => __( '', 'ktdf-theme' )
 				),
 			)
 		),
@@ -107,9 +107,9 @@ function foxhound_get_option_parameters() {
 		// Band Logo
         'band_logo_image' => array(
 			'name' => 'band_logo_image',
-			'title' => __( 'Band Logo Image', 'foxhound' ),
+			'title' => __( 'Band Logo Image', 'ktdf-theme' ),
 			'type' => 'file',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'images',
 			'section' => 'general',
 			'since' => '1.0',
@@ -123,9 +123,9 @@ function foxhound_get_option_parameters() {
 		// Band Images
         'large_band_photo' => array(
 			'name' => 'large_band_photo',
-			'title' => __( 'Large Band Photo', 'foxhound' ),
+			'title' => __( 'Large Band Photo', 'ktdf-theme' ),
 			'type' => 'file',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'images',
 			'section' => 'general',
 			'since' => '1.0',
@@ -138,9 +138,9 @@ function foxhound_get_option_parameters() {
 		),
         'small_band_photo' => array(
 			'name' => 'small_band_photo',
-			'title' => __( 'Small Band Photo', 'foxhound' ),
+			'title' => __( 'Small Band Photo', 'ktdf-theme' ),
 			'type' => 'file',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'images',
 			'section' => 'general',
 			'since' => '1.0',
@@ -154,9 +154,9 @@ function foxhound_get_option_parameters() {
 		// Favicon
         'favicon' => array(
 			'name' => 'favicon',
-			'title' => __( 'Favicon', 'foxhound' ),
+			'title' => __( 'Favicon', 'ktdf-theme' ),
 			'type' => 'file',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'images',
 			'section' => 'general',
 			'since' => '1.0',
@@ -170,7 +170,7 @@ function foxhound_get_option_parameters() {
 		// Slider Effects
         'front_page_image' => array(
 			'name' => 'front_page_image',
-			'title' => __( 'Show the large band photo or slider?', 'foxhound' ),
+			'title' => __( 'Show the large band photo or slider?', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => array( 
 				'photo' => array( 
@@ -182,7 +182,7 @@ function foxhound_get_option_parameters() {
 					'title' =>'Image Slider' 
 				) 
 			),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'headerfooter',
 			'section' => 'header',
 			'since' => '1.0',
@@ -190,10 +190,10 @@ function foxhound_get_option_parameters() {
 		),
         'slider_effect' => array(
 			'name' => 'slider_effect',
-			'title' => __( 'Animation Effect', 'foxhound' ),
+			'title' => __( 'Animation Effect', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_slider_effects(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'headerfooter',
 			'section' => 'slider',
 			'since' => '1.0',
@@ -201,10 +201,10 @@ function foxhound_get_option_parameters() {
 		),
         'slider_speed' => array(
 			'name' => 'slider_speed',
-			'title' => __( 'Animation Speed', 'foxhound' ),
+			'title' => __( 'Animation Speed', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_slider_speeds(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'headerfooter',
 			'section' => 'slider',
 			'since' => '1.0',
@@ -212,10 +212,10 @@ function foxhound_get_option_parameters() {
 		),
         'slider_pause' => array(
 			'name' => 'slider_pause',
-			'title' => __( 'Slider Pause Time', 'foxhound' ),
+			'title' => __( 'Slider Pause Time', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_slider_pauses(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'headerfooter',
 			'section' => 'slider',
 			'since' => '1.0',
@@ -223,7 +223,7 @@ function foxhound_get_option_parameters() {
 		),
         'slider_manual' => array(
 			'name' => 'slider_manual',
-			'title' => __( 'Slider Manual', 'foxhound' ),
+			'title' => __( 'Slider Manual', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => array(
 				'true' => array(
@@ -235,7 +235,7 @@ function foxhound_get_option_parameters() {
 					'title'	=> 'AutoPlay'
 				)
 			),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'headerfooter',
 			'section' => 'slider',
 			'since' => '1.0',
@@ -244,10 +244,10 @@ function foxhound_get_option_parameters() {
 		// Site Color Options (select)
         'background' => array(
 			'name' => 'background',
-			'title' => __( 'Background', 'foxhound' ),
+			'title' => __( 'Background', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_backgrounds(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'colors',
 			'section' => 'background',
 			'since' => '1.0',
@@ -255,10 +255,10 @@ function foxhound_get_option_parameters() {
 		),
         'main_color' => array(
 			'name' => 'main_color',
-			'title' => __( 'Main Color', 'foxhound' ),
+			'title' => __( 'Main Color', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_main_colors(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'colors',
 			'section' => 'colorscheme',
 			'since' => '1.0',
@@ -266,10 +266,10 @@ function foxhound_get_option_parameters() {
 		),
         'accent_color' => array(
 			'name' => 'accent_color',
-			'title' => __( 'Accent Color', 'foxhound' ),
+			'title' => __( 'Accent Color', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_accent_colors(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'colors',
 			'section' => 'colorscheme',
 			'since' => '1.0',
@@ -278,9 +278,9 @@ function foxhound_get_option_parameters() {
 		// Footer Options (checkbox, text-html, text-script)
 		'link_love' => array(
 			'name' => 'link_love',
-			'title' => __( 'Link Love', 'foxhound' ),
+			'title' => __( 'Link Love', 'ktdf-theme' ),
 			'type' => 'checkbox',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'headerfooter',
 			'section' => 'footer',
 			'since' => '1.0',
@@ -288,10 +288,10 @@ function foxhound_get_option_parameters() {
 		),
 		'footer_text' => array(
 			'name' => 'footer_text',
-			'title' => __( 'Footer Text', 'foxhound' ),
+			'title' => __( 'Footer Text', 'ktdf-theme' ),
 			'type' => 'textarea',
 			'sanitize' => 'html',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'headerfooter',
 			'section' => 'footer',
 			'since' => '1.0',
@@ -299,10 +299,10 @@ function foxhound_get_option_parameters() {
 		),
 		'google_analytics' => array(
 			'name' => 'google_analytics',
-			'title' => __( 'Google Analytics', 'foxhound' ),
+			'title' => __( 'Google Analytics', 'ktdf-theme' ),
 			'type' => 'text',
 			'sanitize' => 'nohtml',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'headerfooter',
 			'section' => 'footer',
 			'since' => '1.0',
@@ -311,10 +311,10 @@ function foxhound_get_option_parameters() {
 		// Social Media Links (select, url)
         'social_link_1_profile' => array(
 			'name' => 'social_link_1_profile',
-			'title' => __( 'Social Icon 1', 'foxhound' ),
+			'title' => __( 'Social Icon 1', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_social_networks(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',
@@ -322,10 +322,10 @@ function foxhound_get_option_parameters() {
 		),
 		'social_link_1_url' => array(
 			'name' => 'social_link_1_url',
-			'title' => __( 'Social Icon 1 URL', 'foxhound' ),
+			'title' => __( 'Social Icon 1 URL', 'ktdf-theme' ),
 			'type' => 'text',
 			'sanitize' => 'url',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',
@@ -333,10 +333,10 @@ function foxhound_get_option_parameters() {
 		),
         'social_link_2_profile' => array(
 			'name' => 'social_link_2_profile',
-			'title' => __( 'Social Icon 2', 'foxhound' ),
+			'title' => __( 'Social Icon 2', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_social_networks(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',
@@ -344,10 +344,10 @@ function foxhound_get_option_parameters() {
 		),
 		'social_link_2_url' => array(
 			'name' => 'social_link_2_url',
-			'title' => __( 'Social Icon 2 URL', 'foxhound' ),
+			'title' => __( 'Social Icon 2 URL', 'ktdf-theme' ),
 			'type' => 'text',
 			'sanitize' => 'url',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',
@@ -355,10 +355,10 @@ function foxhound_get_option_parameters() {
 		),
         'social_link_3_profile' => array(
 			'name' => 'social_link_3_profile',
-			'title' => __( 'Social Icon 3', 'foxhound' ),
+			'title' => __( 'Social Icon 3', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_social_networks(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',
@@ -366,10 +366,10 @@ function foxhound_get_option_parameters() {
 		),
 		'social_link_3_url' => array(
 			'name' => 'social_link_3_url',
-			'title' => __( 'Social Icon 3 URL', 'foxhound' ),
+			'title' => __( 'Social Icon 3 URL', 'ktdf-theme' ),
 			'type' => 'text',
 			'sanitize' => 'url',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',
@@ -377,10 +377,10 @@ function foxhound_get_option_parameters() {
 		),
         'social_link_4_profile' => array(
 			'name' => 'social_link_4_profile',
-			'title' => __( 'Social Icon 4', 'foxhound' ),
+			'title' => __( 'Social Icon 4', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_social_networks(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',
@@ -388,10 +388,10 @@ function foxhound_get_option_parameters() {
 		),
 		'social_link_4_url' => array(
 			'name' => 'social_link_4_url',
-			'title' => __( 'Social Icon 4 URL', 'foxhound' ),
+			'title' => __( 'Social Icon 4 URL', 'ktdf-theme' ),
 			'type' => 'text',
 			'sanitize' => 'url',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',
@@ -399,10 +399,10 @@ function foxhound_get_option_parameters() {
 		),
         'social_link_5_profile' => array(
 			'name' => 'social_link_5_profile',
-			'title' => __( 'Social Icon 5', 'foxhound' ),
+			'title' => __( 'Social Icon 5', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_social_networks(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',
@@ -410,10 +410,10 @@ function foxhound_get_option_parameters() {
 		),
 		'social_link_5_url' => array(
 			'name' => 'social_link_5_url',
-			'title' => __( 'Social Icon 5 URL', 'foxhound' ),
+			'title' => __( 'Social Icon 5 URL', 'ktdf-theme' ),
 			'type' => 'text',
 			'sanitize' => 'url',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',
@@ -421,10 +421,10 @@ function foxhound_get_option_parameters() {
 		),
         'social_link_6_profile' => array(
 			'name' => 'social_link_6_profile',
-			'title' => __( 'Social Icon 6', 'foxhound' ),
+			'title' => __( 'Social Icon 6', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => foxhound_social_networks(),
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',
@@ -432,10 +432,10 @@ function foxhound_get_option_parameters() {
 		),
 		'social_link_6_url' => array(
 			'name' => 'social_link_6_url',
-			'title' => __( 'Social Icon 6 URL', 'foxhound' ),
+			'title' => __( 'Social Icon 6 URL', 'ktdf-theme' ),
 			'type' => 'text',
 			'sanitize' => 'url',
-			'description' => __( '', 'foxhound' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'social',
 			'section' => 'profiles',
 			'since' => '1.0',

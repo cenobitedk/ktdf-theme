@@ -52,7 +52,7 @@ padding: 30px 50px;
 			<p>We developed this theme with a heavy emphasis on sharing. We wanted the most powerful plugin built right into our themes. Unfortunately, when these plugins are updated then tend to overwrite code, leaving the customization out. One thing you will need to do to make sure your theme looks good, is to configure the Add-To-Any plugin.</p>
 			
 			
-			<p>In Wordpress, on the left-hand menu navigate to Settings Ð Share / Save Buttons. In the button section, choose Text Only and type in something like 'Share This' and click 'Save Changes' at the bottom. You're done!</p>
+			<p>In Wordpress, on the left-hand menu navigate to Settings ï¿½ Share / Save Buttons. In the button section, choose Text Only and type in something like 'Share This' and click 'Save Changes' at the bottom. You're done!</p>
 			
 			<h4>Photoshop Files</h4>
 			<p>We couldn't include the PSDs in the download as the files are very large and not everyone would want them. You can download the PSDs here by finding the link in the read-me file in your download.</p>
@@ -60,7 +60,6 @@ padding: 30px 50px;
 			<h4>Optional: Recommended Plugins</h4>
 			<ul>
 			<li><a href="http://foxhoundbandthemes.com/support/showthread.php/20-Forget-Myspace!-Using-Soundcloud-on-your-theme!" target="_blank">Soundcloud Widget</a><br>We recommend all the fantastic musicians using our themes should get a Soundcloud account if they haven't yet. It's free, looks great, and works great. Click the link above to head over to our forum on how to integrate your songs into a Wordpress widget.</li>
-			<li><a href="http://wordpress.org/extend/plugins/gigpress/" target="_blank">Gig Press</a><br>The absolute best Wordpress Tour Date plugin for musicians. If it's good enough for Matthew Good, it's...probably good enough for you. We just styled this in our latest release so this plugin works better than ever with our themes!</li>
 			<li><a href="http://wordpress.org/extend/plugins/wp-fancyzoom/" target="_blank">WP Fancy Zoom</a><br>Handy plugin that allows links to images to just zoom on your visitor's screen. We love this plugin and use it all the time.</li>
 			<li><a href="http://wordpress.org/extend/plugins/facebook-like-box-widget/" target="_blank">Facebook Like Box</a><br>This is a key plugin. Connect your Facebook Page and watch your 'Likes' climb.</li>
 			<li><a href="http://wordpress.org/extend/plugins/twitter-widget-pro/" target="_blank">Twitter Widget Pro</a><br>If you'll be using Twitter, this plugin has a ton of options and works well.</li>

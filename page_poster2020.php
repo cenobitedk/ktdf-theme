@@ -1,4 +1,7 @@
-<?php /* Template name: Poster 2020 */ ?>
+<?php
+/* Template name: Poster 2020 */
+$THEME_DIR = get_template_directory_uri();
+?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -15,11 +18,11 @@
         <meta name="description" content="Danish D.I.Y. underground Death Metal festival. The 2020 edition will take place from 3rd-6th of September in Copenhagen, Denmark." />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="/teaser/apple-touch-icon.png">
+        <link rel="apple-touch-icon" href="<?php echo $THEME_DIR; ?>/teaser/apple-touch-icon.png">
 
-        <link rel="stylesheet" href="/teaser/css/normalize.min.css">
-        <link rel="stylesheet" href="/teaser/css/main.css">
-        <link rel="stylesheet" href="/teaser/css/ktdf.css">
+        <link rel="stylesheet" href="<?php echo $THEME_DIR; ?>/teaser/css/normalize.min.css">
+        <link rel="stylesheet" href="<?php echo $THEME_DIR; ?>/teaser/css/main.css">
+        <link rel="stylesheet" href="<?php echo $THEME_DIR; ?>/teaser/css/ktdf.css">
 
         <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -47,14 +50,14 @@
             } else {
                 echo esc_url(home_url('/'));
             }?>" title="Kill-Town Death Fest 2020">
-                <img src="/teaser/img/KTDF-2020-poster-w240.jpg"
-                  data-src="/teaser/img/KTDF-2020-poster-w1200.jpg"
-                  data-srcset="/teaser/img/KTDF-2020-poster-w600.jpg 600w, /teaser/img/KTDF-2020-poster-w900.jpg 1000w, /teaser/img/KTDF-2020-poster-w1200.jpg 1400w"
+                <img src="<?php echo $THEME_DIR; ?>/teaser/img/KTDF-2020-poster-w240.jpg"
+                  data-src="<?php echo $THEME_DIR; ?>/teaser/img/KTDF-2020-poster-w1200.jpg"
+                  data-srcset="<?php echo $THEME_DIR; ?>/teaser/img/KTDF-2020-poster-w600.jpg 600w, <?php echo $THEME_DIR; ?>/teaser/img/KTDF-2020-poster-w900.jpg 1000w, <?php echo $THEME_DIR; ?>/teaser/img/KTDF-2020-poster-w1200.jpg 1400w"
                   sizes="(min-width: 770px) 90vh, 100vw">
             </a>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.6.0/lazyload.min.js"></script>
-        <script src="/teaser/js/main.js"></script>
+        <script src="<?php echo $THEME_DIR; ?>/teaser/js/main.js"></script>
     </body>
 </html>

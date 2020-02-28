@@ -31,10 +31,10 @@ function darkgritty_add_option_parameters( $options ) {
 		// Color Scheme (select)
 		'colour_scheme' => array(
 			'name' => 'colour_scheme',
-			'title' => __( 'Color Scheme', 'darkgritty' ),
+			'title' => __( 'Color Scheme', 'ktdf-theme' ),
 			'type' => 'select',
 			'valid_options' => darkgritty_valid_color_schemes(),
-			'description' => __( '', 'darkgritty' ),
+			'description' => __( '', 'ktdf-theme' ),
 			'tab' => 'colors',
 			'section' => 'colorscheme',
 			'since' => '1.0',
@@ -66,23 +66,23 @@ function darkgritty_valid_color_schemes() {
 	$color_schemes = array(
 		'grey' => array(
 			'name' =>	'grey',
-			'title' => __( 'Grey', 'dark-gritty' )
+			'title' => __( 'Grey', 'ktdf-theme' )
 		),
 		'red' => array(
 			'name' =>	'red',
-			'title' => __( 'Red', 'dark-gritty' )
+			'title' => __( 'Red', 'ktdf-theme' )
 		),
 		'blue' => array(
 			'name' =>	'blue',
-			'title' => __( 'Blue', 'dark-gritty' )
+			'title' => __( 'Blue', 'ktdf-theme' )
 		),
 		'green' => array(
 			'name' =>	'green',
-			'title' => __( 'Green', 'dark-gritty' )
+			'title' => __( 'Green', 'ktdf-theme' )
 		),
 		'gold' => array(
 			'name' =>	'gold',
-			'title' => __( 'Gold', 'dark-gritty' )
+			'title' => __( 'Gold', 'ktdf-theme' )
 		),
 	);
 
