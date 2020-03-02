@@ -18,7 +18,10 @@ $THEME_DIR = get_template_directory_uri();
         <meta name="description" content="Danish D.I.Y. underground Death Metal festival. The 2020 edition will take place from 3rd-6th of September in Copenhagen, Denmark." />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="<?php echo $THEME_DIR; ?>/teaser/apple-touch-icon.png">
+
+        <link rel="shortcut icon" href="<?php echo $THEME_DIR; ?>/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="<?php echo $THEME_DIR; ?>/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="<?php echo $THEME_DIR; ?>/images/apple-touch-icon.png">
 
         <link rel="stylesheet" href="<?php echo $THEME_DIR; ?>/teaser/css/normalize.min.css">
         <link rel="stylesheet" href="<?php echo $THEME_DIR; ?>/teaser/css/main.css">
