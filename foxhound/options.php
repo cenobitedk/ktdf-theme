@@ -161,8 +161,8 @@ function foxhound_get_option_parameters() {
 			'section' => 'general',
 			'since' => '1.0',
 			'default' => array(
-				'url' => get_template_directory_uri() . '/images/favicon.gif',
-				'file' => get_template_directory() . '/images/favicon.gif',
+				'url' => get_template_directory_uri() . '/images/favicon.ico',
+				'file' => get_template_directory() . '/images/favicon.ico',
 				'width' => '0',
 				'height' => '0'
 			)
