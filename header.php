@@ -19,7 +19,7 @@ $foxhound_options = foxhound_get_options();
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all" />
 
-	<title><?php bloginfo( 'name' ); ?> <?php wp_title(); ?></title>
+	<title><?php wp_title('–'); ?><?php bloginfo( 'name' ); ?></title>
 
 	<?php wp_head(); ?>
 </head>
