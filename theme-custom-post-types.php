@@ -47,7 +47,7 @@ function darkgritty_register_slider_post_type() {
 	register_post_type( 'slider-image' , $args );
 }
 /* Add our function to the init hook. */
-add_action('init', 'darkgritty_register_slider_post_type');
+// add_action('init', 'darkgritty_register_slider_post_type');
 
 /**
  * Rearrange Post Edit screen for Slider Images
@@ -59,7 +59,7 @@ function darkgritty_sliderimage_post_metaboxes( $post ) {
     add_meta_box('postimagediv', __('Featured Image', 'ktdf-theme'), 'post_thumbnail_meta_box', 'slider-image', 'normal', 'high');
 	add_meta_box('sliderimagelink', __('Featured Image Link', 'ktdf-theme'), 'darkgritty_sliderimage_link_metabox', 'slider-image', 'normal', 'high');
 }
-add_action( 'add_meta_boxes_slider-image', 'darkgritty_sliderimage_post_metaboxes' );
+// add_action( 'add_meta_boxes_slider-image', 'darkgritty_sliderimage_post_metaboxes' );
 
 /**
  * Define Link Metabox for Post Edit screen for Slider Images
@@ -93,8 +93,8 @@ function darkgritty_save_sliderimage_metadata(){
   update_post_meta($post->ID, 'sliderimage_linktarget', $valid_sliderimage_linktarget );
 }
 /* Add our function to the publish_chapter and draft_chapter hooks. */
-add_action('publish_slider-image', 'darkgritty_save_sliderimage_metadata');
-add_action('draft_slider-image', 'darkgritty_save_sliderimage_metadata');
+// add_action('publish_slider-image', 'darkgritty_save_sliderimage_metadata');
+// add_action('draft_slider-image', 'darkgritty_save_sliderimage_metadata');
 
 /**
  * Modify displayed columns when viewing Slider Image posts
@@ -113,7 +113,7 @@ function darkgritty_sliderimage_posts_edit_columns( $posts_columns ) {
 
     return $tmp;
 }
-add_filter( 'manage_slider-image_posts_columns', 'darkgritty_sliderimage_posts_edit_columns' );
+// add_filter( 'manage_slider-image_posts_columns', 'darkgritty_sliderimage_posts_edit_columns' );
 
 /**
  * Custom column output when viewing the header-image post list.
@@ -127,5 +127,5 @@ function darkgritty_sliderimage_custom_column( $column_name ) {
         echo "</div>";
     }
 }
-add_action( 'manage_posts_custom_column', 'darkgritty_sliderimage_custom_column' );
+// add_action( 'manage_posts_custom_column', 'darkgritty_sliderimage_custom_column' );
 ?>

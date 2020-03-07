@@ -23,7 +23,7 @@ function foxhound_enqueue_comment_reply() {
 	}
 }
 // Hook into wp_enqueue_scripts
-add_action( 'wp_enqueue_scripts', 'foxhound_enqueue_comment_reply' );
+// add_action( 'wp_enqueue_scripts', 'foxhound_enqueue_comment_reply' );
 
 
 /**
@@ -38,7 +38,7 @@ function foxhound_enqueue_favicon() {
 		echo '<link rel="shortcut icon" href="' . esc_attr( $foxhound_options['favicon']['url'] ) . '" />';
 	}
 }
-add_action( 'wp_head', 'foxhound_enqueue_favicon' );
+// add_action( 'wp_head', 'foxhound_enqueue_favicon' );
 
 
 /**
@@ -51,7 +51,7 @@ function foxhound_enqueue_social_icons_css() {
 	$foxhound_social_icons_stylesheet = $foxhound_css_path . 'social-icons.css';
 	wp_enqueue_style( 'foxhound-social-icons-css', $foxhound_social_icons_stylesheet );
 }
-add_action( 'wp_enqueue_scripts', 'foxhound_enqueue_social_icons_css' );
+// add_action( 'wp_enqueue_scripts', 'foxhound_enqueue_social_icons_css' );
 
 
 /**
@@ -83,7 +83,7 @@ $(document).ready(function(){
 ';
 
 }
-add_action( 'wp_footer', 'foxhound_enqueue_fadein' );
+// add_action( 'wp_footer', 'foxhound_enqueue_fadein' );
 
 /**
  * Enqueue Google Analytics Script in Footer
@@ -112,7 +112,7 @@ function foxhound_enqueue_google_analytics() {
 </script>		<?php
 	}
 }
-add_action( 'wp_footer', 'foxhound_enqueue_google_analytics' );
+// add_action( 'wp_footer', 'foxhound_enqueue_google_analytics' );
 
 /**
  * Comment reply form notes_after filter
@@ -121,5 +121,5 @@ function foxhound_comment_form_notes_after( $args ) {
 	$args['comment_notes_after'] = '';
 	return $args;
 }
-add_filter( 'comment_form_defaults', 'foxhound_comment_form_notes_after' );
+// add_filter( 'comment_form_defaults', 'foxhound_comment_form_notes_after' );
 ?>
