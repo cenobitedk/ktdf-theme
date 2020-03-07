@@ -34,27 +34,27 @@ function foxhound_get_settings_page_tabs() {
 				),
 			)
 		),
-        'headerfooter' => array(
-			'name' => 'headerfooter',
-			'title' => __( 'Header/Footer', 'ktdf-theme' ),
-			'sections' => array(
-				'header' => array(
-					'name' => 'header',
-					'title' => __( 'Site Header', 'ktdf-theme' ),
-					'description' => __( '', 'ktdf-theme' )
-				),
-				'slider' => array(
-					'name' => 'slider',
-					'title' => __( 'Header Slider', 'ktdf-theme' ),
-					'description' => __( '', 'ktdf-theme' )
-				),
-				'footer' => array(
-					'name' => 'footer',
-					'title' => __( 'Site Footer', 'ktdf-theme' ),
-					'description' => __( '', 'ktdf-theme' )
-				),
-			)
-		),
+        // 'headerfooter' => array(
+		// 	'name' => 'headerfooter',
+		// 	'title' => __( 'Header/Footer', 'ktdf-theme' ),
+		// 	'sections' => array(
+		// 		'header' => array(
+		// 			'name' => 'header',
+		// 			'title' => __( 'Site Header', 'ktdf-theme' ),
+		// 			'description' => __( '', 'ktdf-theme' )
+		// 		),
+		// 		'slider' => array(
+		// 			'name' => 'slider',
+		// 			'title' => __( 'Header Slider', 'ktdf-theme' ),
+		// 			'description' => __( '', 'ktdf-theme' )
+		// 		),
+		// 		'footer' => array(
+		// 			'name' => 'footer',
+		// 			'title' => __( 'Site Footer', 'ktdf-theme' ),
+		// 			'description' => __( '', 'ktdf-theme' )
+		// 		),
+		// 	)
+		// ),
         'colors' => array(
 			'name' => 'colors',
 			'title' => __( 'Colors and Background', 'ktdf-theme' ),
@@ -71,17 +71,17 @@ function foxhound_get_settings_page_tabs() {
 				),
 			)
 		),
-        'social' => array(
-			'name' => 'social',
-			'title' => __( 'Social Network Profiles', 'ktdf-theme' ),
-			'sections' => array(
-				'profiles' => array(
-					'name' => 'profiles',
-					'title' => __( 'Social Media Icons', 'ktdf-theme' ),
-					'description' => __( '', 'ktdf-theme' )
-				),
-			)
-		),
+        // 'social' => array(
+		// 	'name' => 'social',
+		// 	'title' => __( 'Social Network Profiles', 'ktdf-theme' ),
+		// 	'sections' => array(
+		// 		'profiles' => array(
+		// 			'name' => 'profiles',
+		// 			'title' => __( 'Social Media Icons', 'ktdf-theme' ),
+		// 			'description' => __( '', 'ktdf-theme' )
+		// 		),
+		// 	)
+		// ),
     );
 	return apply_filters( 'foxhound_get_settings_page_tabs', $tabs );
 }
