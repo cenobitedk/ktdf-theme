@@ -116,34 +116,48 @@ a:hover {
 }
 
 /* Header */
-h1#title {
+#title {
   max-width: 975px;
-  height: 309px;
-  /* background: url(images/logo.png); */
   text-indent: -999em;
   margin: 0;
   padding: 0;
   position: relative;
-  overflow-x: scroll;
 }
-h1#title img {
+#title img {
   display: block;
-  position: absolute;
-  width: inherit;
-  height: inherit;
 }
-h1#title a {
+#title a {
   display: block;
   width: 975px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: 50px;
-  line-height: 309px;
   margin: 0;
   padding: 0;
 }
-h1#title a:hover {
+#title a:hover {
   text-decoration: none;
+}
+
+#title img.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 975px) {
+  #title {
+    height: 309px;
+  }
+  #title img {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+  }
+  #title img.mobile {
+    display: none;
+  }
+  #title img.desktop {
+    display: static;
+  }
 }
 
 /* Menu */

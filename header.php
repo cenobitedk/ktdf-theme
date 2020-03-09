@@ -35,7 +35,9 @@ $foxhound_options = foxhound_get_options();
                    <?php echo get_template_directory_uri() . '/images/logo.large.png'; ?> 1640w"
            sizes="(max-width: 750px) 100vw,
                   975px"
-           src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>">
+           src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>"
+		   class="desktop">
+      <img class="mobile" src="<?php echo get_template_directory_uri() . '/images/logo.mobile.png'; ?>">
       <?php bloginfo( 'name' ); ?>
     </a>
   </h1>
