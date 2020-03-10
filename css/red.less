@@ -12,11 +12,12 @@ a:visited {
 a:hover {
   color: @light;
 }
-
-body {
-  background: #000 url(../images/background-red.jpg) center top no-repeat;
-  background-size: auto auto;
-  // -webkit-background-size: 1920px 1280px;
+@media screen and (min-width: 975px) {
+  body {
+    background: #000 url(../images/background-red.jpg) center top no-repeat;
+    background-size: auto auto;
+    // -webkit-background-size: 1920px 1280px;
+  }
 }
 #wrapper {
   background: #131313, #121212;
@@ -27,7 +28,9 @@ body {
   background-size: auto auto;
   // -webkit-background-size: 1920px 1280px;
 }
-
+.nav {
+  border-color: @dark;
+}
 .nav li:hover,
 .nav li.sfhover,
 .nav li.current-menu-item,
