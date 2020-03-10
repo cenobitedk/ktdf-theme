@@ -107,6 +107,17 @@ a:hover {
   text-decoration: underline;
 }
 
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
 /* Wrappers */
 #wrapper {
   max-width: 975px;
@@ -128,7 +139,7 @@ a:hover {
 }
 #title a {
   display: block;
-  width: 975px;
+  max-width: 975px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: 50px;
@@ -141,6 +152,9 @@ a:hover {
 
 #title img.desktop {
   display: none;
+}
+#title img.mobile {
+  width: 100vw;
 }
 
 @media screen and (min-width: 975px) {

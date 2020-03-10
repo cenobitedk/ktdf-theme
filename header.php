@@ -38,7 +38,7 @@ $foxhound_options = foxhound_get_options();
            src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>"
 		   class="desktop">
       <img class="mobile" src="<?php echo get_template_directory_uri() . '/images/logo.mobile.png'; ?>">
-      <?php bloginfo( 'name' ); ?>
+      <span class="visuallyhidden"><?php bloginfo( 'name' ); ?></span>
     </a>
   </h1>
 
