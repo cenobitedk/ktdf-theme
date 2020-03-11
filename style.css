@@ -224,6 +224,8 @@ body.lock {
 
 .nav .toggle-btn.menu-open {
   width: 90px;
+  width: calc(100vw - 73vw);
+  width: calc(100vw - min(73vw, 400px));
 }
 
 .nav .toggle-btn a {
