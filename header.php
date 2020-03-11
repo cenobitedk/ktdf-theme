@@ -76,11 +76,13 @@ $foxhound_options = foxhound_get_options();
 			var menuIconClose = document.querySelector('.menu-icon-close');
 			var menu = document.querySelector('.main-menu');
 			var body = document.querySelector('body');
+			var btn = document.querySelector('.toggle-btn');
 
 			body.classList.toggle('lock', !isOpen);
 			menu.classList.toggle('slide-in', !isOpen);
 			menuIcon.classList.toggle('hide', !isOpen);
 			menuIconClose.classList.toggle('hide', isOpen);
+			btn.classList.toggle('menu-open', !isOpen);
 
 			isOpen = !isOpen;
 

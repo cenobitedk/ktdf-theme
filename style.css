@@ -219,9 +219,15 @@ body.lock {
 
 .nav .toggle-btn {
   text-align: right;
+  margin-left: auto;
+}
+
+.nav .toggle-btn.menu-open {
+  width: 90px;
 }
 
 .nav .toggle-btn a {
+  padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
 }
