@@ -4,7 +4,7 @@ Theme URI:    https://github.com/cenobitedk/ktdf-theme
 Description:  The Dark N Gritty supports custom menus, logos, header image, and background. A widgetized sidebar makes adding new functionality to your website very easy. We encourage creativity, this theme can be used as is or altered and distressed to new measures.
 Author:       Foxhound Band Themes
 Author URI:   http://foxhoundbandthemes.com
-Version:      2.2.0
+Version:      2.2.1
 License:      GPL
 License URI:  http://foxhoundbandthemes.com/terms-licencing/
 Text Domain:  ktdf-theme
@@ -219,9 +219,17 @@ body.lock {
 
 .nav .toggle-btn {
   text-align: right;
+  margin-left: auto;
+}
+
+.nav .toggle-btn.menu-open {
+  width: 90px;
+  width: calc(100vw - 73vw);
+  width: calc(100vw - min(73vw, 400px));
 }
 
 .nav .toggle-btn a {
+  padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
 }
