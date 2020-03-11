@@ -7,42 +7,32 @@ a:visited {
 a:hover {
   color: #ca2e2e;
 }
-body {
-  background: #000 url(../images/background-red.jpg) center top no-repeat;
-  background-size: auto auto;
+@media screen and (min-width: 975px) {
+  body,
+  #wrapper {
+    background: #131313, #121212;
+    background-image: url(../images/background-red.jpg);
+    background-image: url(../images/background-red.jpg), url(../images/bg-2.gif);
+    background-position: center top, center top;
+    background-repeat: no-repeat, repeat-y;
+    background-size: auto auto;
+  }
 }
-#wrapper {
-  background: #131313, #121212;
-  background-image: url(../images/background-red.jpg);
-  background-image: url(../images/background-red.jpg), url(../images/bg-2.gif);
-  background-position: center top, center top;
-  background-repeat: no-repeat, repeat-y;
-  background-size: auto auto;
+.nav {
+  border-color: #881313;
 }
-.nav li:hover,
-.nav li.sfhover,
-.nav li.current-menu-item,
-.nav li.current_page_item {
-  background: url(../images/menu-red.png) 50% 29px no-repeat;
-}
-.nav li:hover a,
-.nav li.sfhover a,
-.nav li.current-menu-item a,
-.nav li.current_page_item a {
+.nav .menu-item:hover a,
+.nav .menu-item.sfhover a,
+.nav .menu-item.current-menu-item a,
+.nav .menu-item.current_page_item a {
   color: #af1818 !important;
 }
-.nav li.has-children a {
-  background: url(../images/arrows-red.png) 100% -89px no-repeat;
-}
-.nav li:hover li:hover a,
-.nav li.sfhover li.sfhover a {
+.nav .menu-item:hover .menu-item:hover a,
+.nav .menu-item.sfhover .menu-item.sfhover a {
   color: #ca2e2e !important;
 }
-.nav li li.has-children a {
-  background: url(../images/arrows-red.png) 100% 6px no-repeat;
-}
-.nav li:hover li:hover li:hover a,
-.nav li.sfhover li.sfhover li.sfhover a {
+.nav .menu-item:hover .menu-item:hover .menu-item:hover a,
+.nav .menu-item.sfhover .menu-item.sfhover .menu-item.sfhover a {
   color: #ca2e2e !important;
 }
 #searchform input[type="text"],
