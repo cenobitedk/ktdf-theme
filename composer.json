@@ -2,7 +2,7 @@
   "name": "cenobitedk/ktdf-theme",
   "description": "Theme for Killtown Deathfest",
   "type": "wordpress-theme",
-  "version": "2.2.2",
+  "version": "2.3.0",
   "require": {
     "composer/installers": "~1.0"
   },
