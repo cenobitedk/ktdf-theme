@@ -10,6 +10,8 @@
  */
 global $foxhound_options;
 $foxhound_options = foxhound_get_options();
+$THEME_DIR = get_template_directory_uri();
+$THEME_PATH = preg_replace('/^https?:/i', '', $THEME_DIR);
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -36,13 +38,13 @@ $foxhound_options = foxhound_get_options();
 	<?php /* Logo */ ?>
 	<h1 id="title">
 		<a href="<?php echo esc_url(home_url('/')); ?>" title="Home">
-			<img srcset="<?php echo get_template_directory_uri() . '/images/logo.png'; ?> 975w,
-						<?php echo get_template_directory_uri() . '/images/logo.large.png'; ?> 1640w"
+			<img srcset="<?php echo $THEME_PATH . '/images/logo.png'; ?> 975w,
+						<?php echo $THEME_PATH . '/images/logo.large.png'; ?> 1640w"
 				sizes="(max-width: 750px) 100vw,
 						975px"
-				src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>"
+				src="<?php echo $THEME_PATH . '/images/logo.png'; ?>"
 				class="desktop">
-			<img class="mobile" src="<?php echo get_template_directory_uri() . '/images/logo.mobile.png'; ?>">
+			<img class="mobile" src="<?php echo $THEME_PATH . '/images/logo.mobile.png'; ?>">
 			<span class="visuallyhidden"><?php bloginfo( 'name' ); ?></span>
     	</a>
   	</h1>
@@ -62,8 +64,8 @@ $foxhound_options = foxhound_get_options();
 		<div class="menu-item toggle-btn">
 			<a href="javascript: void(0);">
 				<span>MENU</span>
-				<img src="<?php echo get_template_directory_uri() . '/images/icon-menu.svg'; ?>" class="menu-icon" >
-				<img src="<?php echo get_template_directory_uri() . '/images/icon-menu-close.svg'; ?>" class="menu-icon menu-icon-close hide" >
+				<img src="<?php echo $THEME_PATH . '/images/icon-menu.svg'; ?>" class="menu-icon" >
+				<img src="<?php echo $THEME_PATH . '/images/icon-menu-close.svg'; ?>" class="menu-icon menu-icon-close hide" >
 			</a>
 		</div>
 	</nav>
